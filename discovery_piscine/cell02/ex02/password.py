@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
 def main():
-	password = "Jorge"
-	try:
-		attempt = int(input())
-	except:
-		print("Please enter only numbers.")
-		return
+	password = "Po"
+	attempt = input()
 	if attempt == password:
 		print("ACCESS GRANTED")
 	else:

@@ -2,9 +2,9 @@
 
 def main():
 	try:
-		number = int(input())
-	except:
-		print("Please enter only numbers.")
+		number = float(input())
+	except NameError:
+		print("Error")
 		return
 	if number == 0:
 		print("This number is equal to zero.")

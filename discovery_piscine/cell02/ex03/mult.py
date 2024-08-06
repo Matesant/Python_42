@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 
 def main():
-	number1 = input("Enter the first number:")
-	number2 = input("Enter the second number:")
 	try:
-		result = int(number1) * int(number2)
+		number1 = int(input("Enter the first number:\n"))
+		number2 = int(input("Enter the second number:\n"))
 	except:
-		print("Please enter only numbers.")
+		print("Please enter only integers.")
 		return
-	print(f"{number1} * {number2} = {result}")
-	if result < 0:
+	result = (number1) * (number2)
+	print(f"{number1} X {number2} = {result}")
+	if result == 0:
+		print("The result is positive and negative.")
+	elif result < 0:
 		print("The result is negative.")
 	else:
 		print("The result is positive.")
+		
 
 if __name__ == "__main__":
 	main()
