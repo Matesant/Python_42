@@ -8,7 +8,10 @@ def main():
 		return
 	needle = argv[1]
 	haystack = argv[2]
-	print(len(findall(needle, haystack)))
+	if findall(needle, haystack) == []:
+		print("none")
+	else:
+		print(len(findall(needle, haystack)))
 
 if __name__ == "__main__":
 	main()
