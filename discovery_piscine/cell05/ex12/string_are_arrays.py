@@ -3,13 +3,16 @@ from sys import argv
 from re import findall
 
 def main():
-	if (len(argv) <= 1):
+	if (len(argv) != 2):
 		print("none")
 		return
-	argc = len(argv) - 1
-	print(f"parameters: {argc}")
-	for i in range(1, len(argv)):
-		print(f"{argv[i]}: {len(argv[i])}")
+	needle = "z"
+	haystack = argv[1]
+	z_ocurrences = findall(needle, haystack)
+	if z_ocurrences == []:
+		print("none")
+	else:
+		print(''.join(z_ocurrences))
 
 if __name__ == "__main__":
 	main()
