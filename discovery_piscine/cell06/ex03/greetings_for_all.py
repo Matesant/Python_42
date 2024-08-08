@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def greetings(name: str = None, flag) -> None:
+def greetings(name: str = None) -> None:
 	if name is None:
 		print("Hello, noble stranger")
 	elif not (isinstance(name, str)):

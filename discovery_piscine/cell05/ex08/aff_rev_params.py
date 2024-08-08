@@ -2,7 +2,7 @@
 from sys import argv
 
 def main():
-	if (len(argv) < 2):
+	if (len(argv) < 3):
 		print("none")
 		return
 	for i in range(len(argv) - 1, 0, -1):

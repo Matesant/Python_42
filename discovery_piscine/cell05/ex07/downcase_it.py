@@ -6,6 +6,6 @@ def main():
 		print("none")
 		return
 	print(argv[1].lower())
-
+	
 if __name__ == "__main__":
 	main()

@@ -2,7 +2,7 @@
 from sys import argv
 
 def add_one(x: any):
-	x += 1
+	 x += 1
 
 def main():
 	x = 0
