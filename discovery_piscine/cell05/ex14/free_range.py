@@ -18,8 +18,5 @@ def main():
 		print("none")
 		return
 
-	
-	
-
 if __name__ == "__main__":
 	main()

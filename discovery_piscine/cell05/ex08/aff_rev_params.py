@@ -5,7 +5,7 @@ def main():
 	if (len(argv) < 2):
 		print("none")
 		return
-	for i in range(len(argv) -1, 0, -1):
+	for i in range(len(argv) - 1, 0, -1):
 		print(argv[i])
 
 if __name__ == "__main__":
