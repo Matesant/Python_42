@@ -12,7 +12,7 @@ def main():
 		if number1 < number2:
 			array = list(range(number1, number2 + 1))
 		else:
-			array = list(range(number2, number1 + 1))
+			array = list(range(number1, number2 - 1, -1))
 		print(array)
 	except:
 		print("none")
