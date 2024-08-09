@@ -8,7 +8,7 @@ def main():
 		return
 	needle = "ism"
 	for i in range(1, len(argv)):
-		if findall(needle, argv[i]):
+		if argv[i].endswith(needle):
 			continue
 		else:
 			print(f"{argv[i]}{needle}")

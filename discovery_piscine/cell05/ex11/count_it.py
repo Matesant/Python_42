@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from sys import argv
-from re import findall
 
 def main():
 	if (len(argv) <= 1):
