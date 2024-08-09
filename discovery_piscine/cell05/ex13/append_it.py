@@ -7,11 +7,8 @@ def main():
 		return
 	needle = "ism"
 	for i in range(1, len(argv)):
-		if argv[i].endswith(needle):
-			continue
-		else:
+		if not argv[i].endswith(needle):
 			print(f"{argv[i]}{needle}")
 	
-
 if __name__ == "__main__":
 	main()
