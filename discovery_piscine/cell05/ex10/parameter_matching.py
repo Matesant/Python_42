@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from sys import argv
-from re import findall
 
 def main():
 	if (len(argv) != 2):
@@ -8,10 +7,10 @@ def main():
 		return
 	needle = argv[1]
 	haystack = input("What was the parameter? ")
-	if haystack.find(needle) == -1:
-		print("Nope, sorry...")
-	else:
+	if haystack == needle:
 		print("Good job!")
+	else:
+		print("Nope, sorry...")
 
 if __name__ == "__main__":
 	main()
